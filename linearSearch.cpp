@@ -2,13 +2,12 @@
 using namespace std;
 
 int linSearch(int arr[], int size, int element){
-    int ans = -1;
     for (int i = 0; i< size; i++){
         if(arr[i] == element){
-            ans = i;
+            return i;
         }
     }
-    return ans;
+    return -1;
 }
 int main() {
     int size;
